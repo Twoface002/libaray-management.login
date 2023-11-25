@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TCAS | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://library-management.com/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"/>
+    <style>
+        .callout {
+            border-radius: .5rem;
+            /* box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); */
+            background-color: #fff;
+            border-left: 5px solid #e9ecef;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
+        .closeCallout {
+            outline: 0 !important;
+        }
+        .b-lr-1{
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;}
+    </style>
+    <script src="https://library-management.com/front/js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', 'button.closeCallout', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+
+    </script>
+</head>
+<body
+    class="hold-transition login-page  ">
+<div
+    class="login-box  ">
+    <div class="login-logo ">
+        <a href="#">TCAS</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Login to start your session</p>
+                        <form method="POST" action="https://library-management.com/login" id="loginForm">
+                <input type="hidden" name="_token" value="p21buE36cUWovISpisTv3a0CEcAbvnI2OFzGy8sJ">                <div class="input-group mb-3">
+
+                    <input id="email" type="email" class="form-control " name="email"
+                           value="" required autocomplete="email" autofocus
+                           placeholder="E-Mail Address">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="input-group mb-3">
+                    <input id="password" type="password" class="form-control " name="password"
+                           required autocomplete="current-password" placeholder="Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="remember" name="remember" >
+                            <label for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-sm btn-dark btn-block">Login</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+            <div class="table-responsive">
+    <table class="table table-bordered table-sm">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">UserName</th>
+            <th scope="col">Password</th>
+            <th scope="col">#</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="10">Login Details</td>
+        </tr>
+        <tr>
+            <td>Admin Login</td>
+            <td>
+                <div style="width:80px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b4a4f4642456b4a4f46424505484446">[email&#160;protected]</a></div>
+            </td>
+            <td>12345678</td>
+            <td>
+                <button type="button" onclick="make_login('admin@admin.com','12345678')" class="btn btn-primary btn-sm">Login</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Teacher Login</td>
+            <td>
+                <div style="width:80px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="503a3f383e3e29103c3926357d3c39327e333f3d">[email&#160;protected]</a></div>
+            </td>
+            <td>12345678</td>
+            <td>
+                <button type="button" onclick="make_login('johnny@live-lib.com','12345678')" class="btn btn-primary btn-sm">Login</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Student Login</td>
+            <td>
+                <div style="width:80px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5432313026313d3f14383d223179383d367a373b39">[email&#160;protected]</a></div>
+            </td>
+            <td>12345678</td>
+            <td>
+                <button type="button" onclick="make_login('fedreik@live-lib.com','12345678')" class="btn btn-primary btn-sm">Login</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Librarian Login</td>
+            <td>
+                <div style="width:80px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2042454e604c49420e434f4d">[email&#160;protected]</a></div>
+            </td>
+            <td>12345678</td>
+            <td>
+                <button type="button" onclick="make_login('ben@lib.com','12345678')" class="btn btn-primary btn-sm">Login</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    make_login = function (username,password) {
+        $("#email").val(username);
+        $("#password").val(password);
+        $("#loginForm").submit();
+    }
+</script>
+            <!-- /.social-auth-links -->
+                            <p class="mb-1">
+                    <a href="https://twoface002.github.io/library-management.com-password-reset/">I forgot my password</a>
+                </p>
+                                        <p class="mb-0">
+                    <a href="https://twoface002.github.io/library-management.com-register/" class="text-center">Register</a>
+                </p>
+                    </div>
+        <!-- /.login-card-body -->
+    </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="https://library-management.com/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://library-management.com/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://library-management.com/js/adminlte.min.js"></script>
+
+</body>
+</html>
